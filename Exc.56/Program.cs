@@ -35,7 +35,7 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-// метод вывода массива максимальных значений матрицы
+// метод вывода массива минимальынх значений матрицы
 
 int[] MinValueOfColumnsMatrix(int[,] matrix)
 {
@@ -65,7 +65,7 @@ int[] MinValueOfColumnsMatrix(int[,] matrix)
    return arrayOfSum;
 }
 
-// Метод поиска индекса максимального элемента в массиве
+// Метод поиска индекса минимального элемента в массиве
 
 int MinOfRowOfArray(int[] Arr) {
    int row = 0;
