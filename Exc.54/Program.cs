@@ -31,7 +31,8 @@ void PrintMatrix(int[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            Console.Write(matrix[i, j] + " ");
+            if (matrix[i, j] < 10) Console.Write(" " + matrix[i, j] + " |");
+            else Console.Write(matrix[i, j] + " |");
         }
         Console.WriteLine();
     }
@@ -66,8 +67,8 @@ int[,] RangeNewMatrix(int[,] matrix)
 }
 
 // константы для создания массива случайных целых чисел
-const int ROWS = 20;
-const int COLUMNS = 20;
+const int ROWS = 10;
+const int COLUMNS = 10;
 const int LEFTRANGE = 0;
 const int RIGHTRNGE = 30;
 
