@@ -56,7 +56,7 @@ void PrintMatrix(int[, ,] matrix)
      
 }
 
-const int r = 3;
-const int c = 3;
-const int d = 3;
+const int r = 2;
+const int c = 2;
+const int d = 2;
 PrintMatrix(GetRandomMatrix1(r, c, d));
