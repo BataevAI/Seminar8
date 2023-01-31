@@ -6,6 +6,7 @@
 // 18 20
 // 15 18
 
+// метод формирования случайной матрицы
 int[,] GetRandomMatrix1(int rows, int columns, int leftRange, int rightRange)
 {
     int[,] matrix = new int[rows,columns];
@@ -34,7 +35,7 @@ void PrintMatrix(int[,] matrix)
         Console.WriteLine();
     }
 }
-
+        // метод произведения двух матриц
     int[,] ProductMatrix(int[,] matrix1, int[,] matrix2)
     {
         int[,] matrixTotal = new int[matrix1.GetLength(0),matrix2.GetLength(1)];
