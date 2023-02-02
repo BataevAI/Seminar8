@@ -11,9 +11,8 @@ int[, ,] GetRandomMatrix1(int rows, int columns, int deep)
 {
     int[, ,] matrix = new int[rows,columns,deep];
    
-
-       
-       
+   int count = 10;
+      
         
 
     for(int i = 0; i < matrix.GetLength(0); i++)
@@ -22,13 +21,10 @@ int[, ,] GetRandomMatrix1(int rows, int columns, int deep)
         {
             for(int k = 0; k < matrix.GetLength(2); k++) 
                 {
-                    // мой личный рандомайзер ))
-
-                
-                        int rand = 10 + 4 * i + 5 * j + 6 * k + (i + 1) * (j + 2) * (k + 4);
-                    if (rand > 99) {rand = rand - 48; matrix[i, j, k] = rand;}
-                    else if (rand < 10) {rand = Math.Abs(rand) + 56; matrix[i, j, k] = rand;}
-                    else {matrix[i, j, k] = 10 + 4 * i + 5 * j + 6 * k + (i + 1) * (j + 2) * (k - 1);}
+                 
+                matrix[i, j, k] =+ count;
+                count++;
+                 
                 }
         }
     }
@@ -37,6 +33,7 @@ int[, ,] GetRandomMatrix1(int rows, int columns, int deep)
     return matrix;
 }
 
+// метод печати элементов матрицы
 void PrintMatrix(int[, ,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
@@ -56,7 +53,7 @@ void PrintMatrix(int[, ,] matrix)
      
 }
 
-const int r = 2;
-const int c = 2;
-const int d = 2;
+const int r = 3;
+const int c = 3;
+const int d = 3;
 PrintMatrix(GetRandomMatrix1(r, c, d));
