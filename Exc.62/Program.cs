@@ -20,6 +20,7 @@ void PrintMatrix(int[,] matrix)
         Console.WriteLine(); //string s1 = i.ToString();
     }
 }
+// Метод заполнения матрицы по спирали
 
 int[,] SpiralMatrix(int[,] arr) {
 
